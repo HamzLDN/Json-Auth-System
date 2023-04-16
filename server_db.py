@@ -5,10 +5,8 @@ import os
 import json
 import subprocess
 import hashlib
-import time
 import socket
 import threading
-import pickle
 
 class Authenticator:
     def __init__(self, filename) -> None:

@@ -15,4 +15,4 @@ verbose = next((user[i] for i, data in enumerate(user) if data == "-v"), True)
 
 if verbose:
     verbose = True
-api_server.Cloud(ip, port, auth.Authenticator(logs), verbose).connect()
+api_server.Cloud(ip, int(port), auth.Authenticator(logs), verbose).connect()
